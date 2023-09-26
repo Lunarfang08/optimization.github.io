@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #1f91d4;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Mobile menu styles */
+        .menu-button {
+            display: none;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #ff7f50;
+        }
+
+        .show {
+            display: block;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .menu-button {
+                display: block;
+            }
+        }
+        #chat-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Simple Website</h1>
+    
+        <img src="https://as2.ftcdn.net/v2/jpg/05/25/08/09/1000_F_525080936_JEpnKXh2siYKBPpsqd98pbbcIzy4ySKz.jpg" alt="Image" loading="lazy" style="max-width: 100%; height: auto;">
+    </header>
+
+    <nav>
+        <div class="menu-button">&#9776;</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Arsal Adnan Web designer </h2>
+            <p>Task given by <b>Internee.pk</b></p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web designing</li>
+                <li>Web development</li>
+                <li>Machine learning</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Simple Website</p>
+    </footer>
+
+    <script async>
+        function toggleMobileMenu() {
+            const nav = document.querySelector("nav ul");
+            nav.classList.toggle("show");
+        }
+
+        // Add an event listener to the menu button
+        const menuButton = document.querySelector(".menu-button");
+        menuButton.addEventListener("click", toggleMobileMenu);
+    </script>
+</body>
+</html>
